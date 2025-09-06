@@ -23,7 +23,7 @@ You answer:
 
 3. What is the difference between fetching changes and pulling changes?
 
-Your answer:
+Your answer: fetch is used when something is updated and we get the changes from repos to our pc. but git pull is used when it not only fetch changes but also merge to our repo, like it is used when we also want to have the changes in our branch not only just seeing them.
 
 4. What does -i flag stand for? What is it's significance in git?
 
@@ -37,15 +37,27 @@ You answer:
 
 6. Explain `git merge` and `git rebase` with example(s).
 
-You answer:
+You answer: 
 
 7. Write the flow how you create a repository and push changes to it. Also mention the commands used at each step.
 
 You answer:
+    firstly we create a new repo in our github profile by putting a name to it (assume it to be https://github/name/project-name.git)
+
+    Then we start by initialising the git locally by using "git init", which creates a folder for us to work on.
+
+    After our code is written and and all files are done we add i.e. "git add ." (if autosave is not there we save it by CTRL+S)
+
+    then we commit our changes just like we did for profile.md, documentation.md i.e. "git commit -m "Add profile.md to  repo"" is an example which saves our changes with a message, here it is Add profile.md to  repo.
+
+    now we copy the new repo we creaed link which is ib github then we link the locally did work to online ie.e "git remote add origin https://github/name/project-name.git"
+    
+    now we push our changes to github i.e. "git push -u origin main"
+    
 
 8. How would you prevent a file or folder from getting tracked by git?
 
-Your answer:
+Your answer: 
 
 9. You did not implement the step you mentioned in question 8 and now you have committed and pushed your database's
 secret key to the github. How will you remove the key from your git's commit history to avoid any misuse?
